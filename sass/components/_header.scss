@@ -1,0 +1,41 @@
+.header-container {
+	background-color: #00486E;
+}
+
+.header {
+	@extend %clearfix;
+	.logo {
+		float: left;
+		font-size: 2.2em;
+		line-height: 2.2em;
+		font-weight: bold;
+		color: #f8d300;
+		span {
+			color: #fff;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.header-container {
+		position: fixed;
+		top: 0;
+		left: auto;
+		right: 0;
+		z-index: 1000;
+		width: 100%;
+		@include transition(right 0.4s);
+		.secondary-nav-opened & {
+			right: 70%;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.header {
+		.logo {
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

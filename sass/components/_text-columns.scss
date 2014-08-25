@@ -1,0 +1,33 @@
+.text-columns {
+	margin-top: 2em;
+	.list-item {
+		float: left;
+		width: 33%;
+		padding: 0 1em;
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.text-columns {
+		.list-item {
+			width: 50%;
+			padding-top: 2em;
+			margin-top: 2em;
+			border-top: 1px dotted #B7CFDC;
+			&:first-child {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.text-columns {
+		.list-item{
+			&:nth-child(n) {
+				width: 100%;
+			}
+		}
+	}
+}

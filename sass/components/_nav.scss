@@ -1,0 +1,146 @@
+/* Primary Nav */
+.primary-nav {
+	float: right;
+	.list-item {
+		font-size: 0.688em;
+		color: #8BAFC1;
+		&:hover {
+			color: adjust-lightness(#8BAFC1, 20);
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.primary-nav {
+		display: none;
+		width: 100%;
+		.primary-nav-opened & {
+			display: block;
+		}
+		.list-item {
+			width: 100%;
+			text-align: center;
+			border-top: 1px solid $secondary-nav-borders;
+			font-size: 0.75em;
+			a {
+				display: block;
+				padding: 1em;
+			}
+		}
+	}
+}
+
+
+/* Secondary Nav */
+.secondary-nav-container {
+	background-color: #023F5F;
+	border-top: 1px solid $secondary-nav-borders;
+	border-bottom: 1px solid $secondary-nav-borders;
+	.sticky & {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+		width: 100%;
+	}
+}
+
+.secondary-nav {
+	.list-item {
+		font-size: 0.875em;
+		margin: 0 1%;
+		color: #fff;
+		&:hover {
+			color: adjust-lightness(#fff, -20);
+		}
+		.lt-ie10 & {
+			margin: 0 1%;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.secondary-nav {
+		.list-item {
+			margin: 0 0.5%;
+			.lt-ie10 & {
+				margin: 0 0.3%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.secondary-nav-container,
+	.sticky .secondary-nav-container {
+		position: absolute;
+		top: 0;
+		left: auto;
+		right: -70%;
+		width: 70%;
+		height: 100%;
+		.list-item {
+			width: 100%;
+			border-bottom: 1px solid #0E4B6A;
+			a {
+				display: block;
+				padding: 1.3em;
+			}
+		}
+	}
+}
+
+
+/* Icons List Mobile (small devices) */
+.list-mobile {
+	.list-item {
+		position: relative;
+		margin: 1.2em 1.5% 0;
+		font-size: 0.75em;
+		color: #fff;
+		a {
+			position: relative;
+			padding-top: 3em;
+			text-decoration: none;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+			}
+			&.links:before {
+				@include sprites(gear);
+				@include horizontalAlign($sprites, gear);
+
+			}
+			&.login:before {
+				@include sprites(account);
+				@include horizontalAlign($sprites, account);
+			}
+			&.menu:before {
+				@include sprites(menu);
+				@include horizontalAlign($sprites, menu);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.list-mobile {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.list-mobile {
+		display: block;
+		margin: 0 auto;
+		&.left,
+		&.right {
+			text-align: center;
+		}
+		.list-item {
+			width: 18%;
+		}
+	}
+}

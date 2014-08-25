@@ -1,0 +1,24 @@
+.list {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	&.left {
+		text-align: left;
+	}
+	&.right {
+		text-align: right;
+	}
+
+	.list-item {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		line-height: 1.25em;
+		color: inherit;
+
+		a {
+			display: inline-block;
+			padding: 0.75em;
+		}
+	}
+}

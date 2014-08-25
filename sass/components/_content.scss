@@ -1,0 +1,19 @@
+.content-container {
+	@extend %clearfix;
+	.content {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.content-container {
+		padding-top: 5em;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.content-container {
+		padding-top: 10em;
+	}
+}

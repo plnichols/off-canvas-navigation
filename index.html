@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>William Hill - Coding Task 2</title>
+    <meta name="description" content="Create a small responsive web site">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="canvas-outer">
+        <div class="canvas-inner">
+
+            <div class="header-container">
+                <header class="header wrapper">
+                    <div class="logo">Logo<span>HERE</span></div>
+
+                    <ul class="list list-mobile right hidden">
+                        <li class="list-item"><a href="#" class="links" data-mobile-toggle="primary-nav-opened">Links</a></li>
+                        <li class="list-item"><a href="#" class="login" data-mobile-toggle="login-form-opened">Login</a></li>
+                        <li class="list-item"><a href="#" class="menu" data-mobile-toggle="secondary-nav-opened">Menu</a></li>
+                    </ul>   
+
+                    <nav class="primary-nav">
+                        <ul class="list right">
+                            <li class="list-item"><a href="#">Link 1</a></li>
+                            <li class="list-item"><a href="#">Link 2</a></li>
+                            <li class="list-item"><a href="#">Awkward long link</a></li>
+                            <li class="list-item"><a href="#">Link 3</a></li>
+                            <li class="list-item"><a href="#">Link 4</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="login-form-container">
+                        <form class="form login-form" id="login-form">
+                            <label for="username" class="placeholder">Username</label>
+                            <input type="text" id="username" value="" placeholder="Username" />
+                            <label for="password" class="placeholder">Password</label>
+                            <input type="text" id="password" value="" placeholder="Password" />
+                            <input type="submit" value="Go" />
+                        </form>
+
+                        <div class="login-connected">
+                            Hello <span class="login-connected-name"></span> <span class="login-connected-logout">(<a href="#">Logout</a>)</span>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <div class="secondary-nav-container">
+                <nav class="secondary-nav wrapper">
+                    <ul class="list">
+                        <li class="list-item"><a href="#">Item 1</a></li>
+                        <li class="list-item"><a href="#">Item 2</a></li>
+                        <li class="list-item"><a href="#">Item 3</a></li>
+                        <li class="list-item"><a href="#">Item 4</a></li>
+                        <li class="list-item"><a href="#">Item 5</a></li>
+                        <li class="list-item"><a href="#">Item 6</a></li>
+                        <li class="list-item"><a href="#">Item 7</a></li>
+                        <li class="list-item"><a href="#">Item 8</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content-container">
+                <div class="content wrapper">
+                    <section class="image-grid">
+                        <ul class="list">
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item feature-img"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item  feature-img"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                            <li class="list-item"><img class="image" src="images/dummy-image.png" alt="Dummy Image"></li>
+                        </ul>
+                    </section>
+                    <section class="text-columns">
+                        <ul class="list">
+                            <li class="list-item">
+                                <h1>Paragraph 1</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat accumsan ipsum sed euismod. Suspendisse potenti. Nam rutrum mi vitae sem dapibus, vel varius ante blandit. Vestibulum imperdiet, elit ac posuere lobortis, lectus massa blandit dolor, eu cursus metus arcu in est. Morbi eu ligula justo. Sed sit amet nunc eu velit convallis fringilla. Ut varius metus eu egestas venenatis. Nulla adipiscing tellus quis nunc dignissim, nec hendrerit neque laoreet. Phasellus vestibulum molestie diam, id laoreet nibh euismod nec.</p>
+                                <h2>Sub paragraph</h2>
+                                <p>Fusce placerat, turpis non tristique rutrum, urna risus elementum eros, non tempus quam neque id metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Etiam metus massa, adipiscing ac augue sit amet, elementum dignissim neque. Nullam tortor massa, pellentesque quis urna quis, ullamcorper elementum elit. Sed tristique purus a arcu consectetur feugiat. Sed ultricies aliquam euismod. Duis id bibendum urna. Etiam nec metus neque. Aenean dignissim in odio in egestas.</p>
+                            </li>
+                            <li class="list-item">
+                                <h1>Paragraph 2</h1>
+                                <p>Suspendisse eu ipsum felis. Quisque suscipit magna sed felis eleifend porta. Mauris sed suscipit libero. Praesent semper lorem sed orci volutpat vehicula. Cras eu lorem scelerisque, sodales mauris in, bibendum diam. Donec ultrices massa neque, ut imperdiet erat ullamcorper eget. Suspendisse imperdiet erat venenatis, consectetur purus et, pharetra massa. Sed tempus metus quis ligula elementum tempor. In scelerisque dolor vel posuere sollicitudin. Proin gravida quis urna et convallis. In consectetur sodales neque, quis consequat sapien ullamcorper in. Mauris id turpis risus. Maecenas vitae mi ac turpis elementum semper a sed leo. Vestibulum justo lorem, cursus ac leo eget, rhoncus scelerisque tortor.</p>
+                                <h2>Sub paragraph</h2>
+                                <p>Donec facilisis lacus vitae massa mattis sollicitudin. Morbi pulvinar nunc sapien, at euismod turpis dictum at. Cras orci nunc, sagittis scelerisque scelerisque id, vehicula et ipsum. Integer ut eleifend enim, vel tincidunt erat. Proin a sollicitudin libero. Integer iaculis diam nec orci commodo pellentesque. </p>
+                                <h2>Sub paragraph</h2>
+                                <p>Aliquam ultricies laoreet lectus. Etiam ornare tellus quis elit scelerisque sagittis. Nam sem mauris, auctor non urna ac, bibendum consectetur sem. Nulla mollis mi quis lorem varius, at tristique leo sodales. Sed et enim dui. Sed malesuada ullamcorper lectus non bibendum. Maecenas erat sapien, faucibus molestie fermentum mollis, porta eget tortor. Aenean sed dictum erat, non luctus sapien.</p>
+                            </li>
+                            <li class="list-item">
+                                <h1>Paragraph 3</h1>
+                                <p>Vestibulum ut dui suscipit, fringilla leo a, commodo ligula. Nam et elementum massa. Proin molestie, risus a iaculis rhoncus, augue velit faucibus arcu, quis tincidunt leo augue sed est. Etiam interdum nulla rhoncus dictum volutpat. Praesent pretium, dolor vitae suscipit gravida, orci augue molestie orci, fringilla sollicitudin erat dui a lacus. Aenean ullamcorper lacus dui, ac ullamcorper vehicula. Cras eu lorem scelerisque, sodales mauris in, bibendum diam. Donec ultrices massa neque, ut imperdiet erat ullamcorper eget. Suspendisse imperdiet erat venenatis, consectetur purus et, pharetra massa. Sed tempus metus quis ligula elementum tempor. In scelerisque dolor vel posuere sollicitudin. Proin gravida quis urna et convallis. In consectetur sodales neque, quivehicula. Cras eu lorem scelerisque, sodales mauris in, bibendum diam. Donec ultrices massa neque, ut imperdiet erat ullamcorper eget. Suspendisse imperdiet erat venenatis, consectetur purus et, pharetra massa. Sed tempus metus quis ligula elementum tempor. In scelerisque dolor vel posuere sollicitudin. Proin gravida quis urna et convallis. In consectetur sodales neque, quinisl dapibus vitae. In pellentesque posuere viverra. Vivamus arcu mauris, tristique in aliquet nec, molestie nec quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam et elementum mauris. Praesent facilisis gravida turpis, id blandit eros pharetra ac.</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <div class="footer-container">
+                <footer class="footer wrapper">
+                    <ul class="list">
+                        <li class="list-item"><a href="#">Footer Link 1</a></li>
+                        <li class="list-item"><a href="#">Footer Link 2</a></li>
+                        <li class="list-item"><a href="#">Footer Link 3</a></li>
+                        <li class="list-item"><a href="#">Footer Link 4</a></li>
+                        <li class="list-item"><a href="#">Footer Link 5</a></li>
+                    </ul>
+                    <p class="copyright">Copyright 2014 &copy; Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </footer>
+            </div>
+
+        </div><!-- canvas-inner -->
+    </div><!-- canvas-outer -->
+    
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
